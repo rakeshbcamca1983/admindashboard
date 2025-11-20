@@ -1,0 +1,111 @@
+/* --------------------- Scrollbar ---------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bec8d34a;
+  border-radius: 2px;
+}
+
+/* --------------------- Login Page ---------------------- */
+
+.loginPage2 {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.loginForm {
+  width: 480px;
+  padding: 35px 30px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #f93a13;
+}
+
+.loginForm h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+/* --------------------- Inputs ---------------------- */
+
+.loginForm input {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid #8d8d8d !important;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.loginForm input:focus {
+  border: 1px solid #f93a13 !important;
+  box-shadow: 0px 0px 6px rgba(249, 58, 19, 0.3);
+}
+
+.form-control::placeholder {
+  color: #bebebe;
+  font-size: 0.9rem;
+}
+
+.bold-form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+/* --------------------- Login Button (Button-74) ---------------------- */
+
+.button-74 {
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 80px;
+  border: none;
+  background-image: linear-gradient(92.83deg, #ff7426 0%, #f93a13 100%);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.button-74:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(249, 58, 19, 0.3);
+}
+
+.button-74:active {
+  transform: scale(0.97);
+}
+
+/* Disable */
+.button-74:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* --------------------- Responsive ---------------------- */
+
+@media (max-width: 480px) {
+  .loginForm {
+    width: 92%;
+    padding: 25px;
+  }
+}
